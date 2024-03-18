@@ -14,12 +14,6 @@ Danny has provided you with a sample of his overall customer data due to privacy
 
 ***
 
-## Entity Relationship Diagram
-
-![image]()
-
-***
-
 ## Question and Solution
 
 
