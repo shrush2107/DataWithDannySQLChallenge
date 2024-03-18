@@ -16,10 +16,10 @@ Danny has provided you with a sample of his overall customer data due to privacy
 
 ## Question and Solution
 
-** Creating the schema:
+**Creating the schema:
 ````sql
 CREATE SCHEMA dannys_diner;
-/*use dannys_diner;
+use dannys_diner;
 CREATE TABLE sales (
   customer_id VARCHAR(1),
   order_date DATE,
