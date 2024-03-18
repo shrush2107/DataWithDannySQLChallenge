@@ -17,6 +17,7 @@ Danny has provided you with a sample of his overall customer data due to privacy
 ## Question and Solution
 
 ** Creating the schema:
+````sql
 CREATE SCHEMA dannys_diner;
 /*use dannys_diner;
 CREATE TABLE sales (
@@ -69,5 +70,4 @@ INSERT INTO members
 VALUES
   ('A', '2021-01-07'),
   ('B', '2021-01-09');
-
-
+````
