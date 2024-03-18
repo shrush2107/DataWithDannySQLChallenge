@@ -84,6 +84,11 @@ FROM
     menu ON sales.product_id = menu.product_id
 GROUP BY customer_id;
 ````
+STEPS:
+- The query joins the sales table with the menu table on the product_id.
+- It groups the results by customer_id.
+- It calculates the total amount spent for each customer.
+- The CONCAT('$ ', SUM(price)) concatenates the dollar sign with the sum of prices for each customer.
 
 ### 2.How many days has each customer visited the restaurant?
 ````sql
