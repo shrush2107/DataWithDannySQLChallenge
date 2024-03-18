@@ -98,6 +98,10 @@ FROM
     sales
 GROUP BY customer_id;
 ````
+STEPS:
+- To determine the unique number of visits for each customer, utilize COUNT(DISTINCT `order_date`).
+- Remember to include the DISTINCT keyword to ensure accurate counting, preventing duplicate inclusion of days. Without DISTINCT, multiple visits on the same day, like Customer A's two visits on '2021-01-07', would incorrectly inflate the count to 2 days instead of the correct count of 1 day.
+
 
 ### 3.What was the first item from the menu purchased by each customer?
 ````sql
