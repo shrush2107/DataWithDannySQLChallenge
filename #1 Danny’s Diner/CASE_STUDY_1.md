@@ -121,6 +121,11 @@ FROM
 WHERE 
     purchase_rank = 1;
 ````
+STEPS:
+- Create a temporary table temp using a Common Table Expression (CTE) named temp.
+- Within the temp table, select columns customer_id, order_date, product_name, and calculates a ranking for each purchase made by a customer (purchase_rank). The DENSE_RANK() function is used, which assigns a rank to each row within a partition of the result set. Here, the partition is defined by the customer_id, and the rows are ordered by order_date.
+- The sales table is joined with the menu table based on the product_id to obtain the product_name.
+- Once the temp table is created, the main query selects customer_id and product_name from the temp table where the purchase_rank is equal to 1. This means it selects the first purchase made by each customer, as determined by the ordering of order_date.
 
 ### 4.What is the most purchased item on the menu and how many times was it purchased by all customers?
 ````sql
