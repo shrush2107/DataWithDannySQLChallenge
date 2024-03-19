@@ -139,6 +139,9 @@ GROUP BY sales.product_id
 ORDER BY purchase_count DESC
 LIMIT 1;
 ````
+STEPS:
+- Perform a COUNT aggregation on the product_id column and ORDER BY the result in descending order using purchase_count field.
+- Apply the LIMIT 1 clause to filter and retrieve the highest number of purchased items.
 
 ### 5.Which item was the most popular for each customer?
 ````sql
@@ -276,3 +279,4 @@ ORDER BY
     sales.customer_id, 
     sales.order_date;
 ````
+STEPS:
